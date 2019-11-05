@@ -1,0 +1,38 @@
+import pygame
+
+pygame.init()
+size = (width, height) = (800, 600)
+screen = pygame.display.set_mode(size)
+
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLACK = (0, 0, 0)
+BLUE = (0, 0, 255)
+WHITE = (255,255,255)
+GREY = (142,143,147)
+BROWN = (170,83,1)
+
+pygame.draw.polygon(screen, (WHITE), [[390, 225], [410, 225],[415, 325],[385,325]])
+pygame.draw.circle(screen, (255,218,185), (400,200),30)
+#pygame.draw.polygon(screen, (GREY), [[400, 325], [430, 370],[430, 400],[415,400],[415,370],[390,325]])
+pygame.draw.polygon(screen, (86,115,104), [[405,325],[360,380],[340, 325],[350,315],[365,360],[390,325]])
+pygame.draw.polygon(screen, (RED), [[350,315],[345,310],[320, 330],[325,335]])
+#pygame.draw.rect(screen, (RED), pygame.Rect(415,400,25,7))
+pygame.draw.rect(screen, (BLACK), pygame.Rect(405,190,40,10))
+pygame.draw.circle(screen, (WHITE), (415,197),2)
+pygame.draw.rect(screen, (BLACK), pygame.Rect(365,165,45,15))
+pygame.draw.rect(screen, (BLACK), pygame.Rect(365,165,45,15))
+pygame.draw.rect(screen, (BLACK), pygame.Rect(365,165,25,17))
+pygame.draw.line(screen,BLACK, (415,210) , (432,210),2)
+pygame.draw.line(screen,BROWN, (415,205) , (430,205),4)
+pygame.draw.line(screen,BLACK, (388,240) , (412,240),10)
+pygame.draw.line(screen,BLACK, (388,255) , (412,255),10)
+pygame.draw.line(screen,BLACK, (388,270) , (412,270),10)
+pygame.draw.line(screen,BLACK, (386,285) , (414,285),10)
+pygame.draw.line(screen,BLACK, (386,300) , (414,300),10)
+pygame.draw.line(screen,BLACK, (386,315) , (414,315),10)
+pygame.display.flip()
+
+
+pygame.draw.polygon(screen, (86,115,104), [[cmove+15,325],[cmove-30,380],[cmove-50, 325],[cmove-40,315],[cmove-25,360],[cmove,325]])
+pygame.draw.polygon(screen, (RED), [[cmove-40,315],[cmove-45,310],[cmove-70, 330],[cmove-65,335]])
